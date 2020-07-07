@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock | Paper | Scissors</title>
+        <script>
+            //Function used to get computer's move.
+            function computerPlay(){
+                let options = ["rock", "paper", "scissors"];
+                return options[Math.floor(Math.random() * 3)];
+            }
+
+            let playerMove = window.prompt("Rock, paper, or scissors?").toLocaleLowerCase();
+
+            //Play the rock,paper,scissors game
+            function playGame(playerSelection, computerSelection = computerPlay()){
+                console.log(computerSelection);
+                if(playerSelection == computerSelection){
+                    return "Its a draw!";
+                }else if(playerSelection == "rock" && computerSelection == "scissors"){
+                    return "You win! Rock beats scissors";
+                }else if(playerSelection == "paper" && computerSelection == "rock"){
+                    return "You win! Paper beats rock";
+                }else if(playerSelection == "scissors" && computerSelection == "paper"){
+                    return "You Win! Scissors beats paper";
+                }else if (playerSelection == "scissors" && computerSelection == "rock"){
+                    return "You lose! Rock beats scissors";
+                }else if(playerSelection == "rock" && computerSelection == "paper"){
+                    return "You lose! Paper beats rock";
+                }else if(playerSelection == "paper" && computerSelection == "scissors"){
+                    return "You lose! Scissors beats paper!";
+                }
+                else{
+                    return "Invalid choice buddy!";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
