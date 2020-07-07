@@ -11,8 +11,6 @@
                 return options[Math.floor(Math.random() * 3)];
             }
 
-            let playerMove = window.prompt("Rock, paper, or scissors?").toLocaleLowerCase();
-
             //Play the rock,paper,scissors game
             function playGame(playerSelection, computerSelection = computerPlay()){
                 if(playerSelection == computerSelection){
@@ -34,6 +32,19 @@
                     return "Invalid choice buddy!";
                 }
             }
+
+            //Funciton to call when the script fully loads, plays the game 5 times. 
+            function game(){
+                let i = 0;
+                while (i < 5){
+                    let playerMove = window.prompt("Rock, paper, or scissors?").toLocaleLowerCase();
+                    alert(playGame(playerMove));
+                    i++;
+                }
+            }
+
+            //call the function "game"
+            game();
         </script>
     </head>
     <body>
