@@ -1,16 +1,40 @@
-
-
+/*Adjust Options for Both Player and Computer*/
 .game-row{
     display:flex;
     flex: 1;
     justify-content: space-evenly;
     width:80%; 
-    border: 1px solid black;
     margin:10px auto;
 }
 
 .game-choice{
     height:200px;
     background-color: white;
-    flex-basis: 200px;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+/*Game display Layout*/
+.game-display{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width:inherit;
+    margin: inherit;
+}
+
+.round-result{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+/*Define size for choice icons*/
+i[class*="fa-hand"]{
+    font-size: 5rem;
 }
