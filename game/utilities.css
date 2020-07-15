@@ -16,9 +16,35 @@
     align-items: center;
     border-radius: 20px;
     flex-wrap: wrap;
+    transition: all 1s ease;
+}
+
+.player-choice .game-choice:hover{
+    background-color: #c2c2c2;
+
+}
+
+.game-choice i{
+    transition: all .7s ease;
+}
+
+.game-choice:hover > i{
+    transform: rotate(90deg);
 }
 
 /*Define size for choice icons*/
-i[class*="fa-hand"]{
+.game-choice i{
     font-size: 5rem;
 }
+
+/*Button Toggle Style*/
+.btn-disabled{
+    cursor: not-allowed;
+    background-color: #25592b;
+}
+
+.btn-activated{
+    cursor: pointer;
+    background-color: #62de70;
+}
+

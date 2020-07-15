@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rock | Paper | Scissors</title>
         <script src="https://kit.fontawesome.com/ee7266906e.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="utilities.css">
         <link rel="stylesheet" href="style.css">
     </head>
@@ -18,9 +19,9 @@
         <div class="game">
             <div class="player-choice">
                 <div class="game-row">
-                    <div class="game-choice"><i class="fas fa-hand-rock"></i></div>
-                    <div class="game-choice"><i class="fas fa-hand-paper"></i></div>
-                    <div class="game-choice"><i class="fas fa-hand-scissors"></i></div>
+                    <button class="game-choice"><i class="fas fa-hand-rock"></i></button>
+                    <button class="game-choice"><i class="fas fa-hand-paper"></i></button>
+                    <button class="game-choice"><i class="fas fa-hand-scissors"></i></button>
                 </div>
             </div>
             <div class="game-display">
@@ -33,16 +34,15 @@
             </div>
             <div class="computer-choice">
                 <div class="game-row">
-                    <div class="game-choice">
-                        <i id="computer-rock" class="fas fa-hand-rock"></i>
-                        <i id="computer-paper" class="fas fa-hand-rock"></i>
-                        <i id="computer-scissors" class="fas fa-hand-rock"></i></div>
+                    <div id="computer-throw" class="game-choice">
+                        
+                    </div>
                 </div>
             </div>
         </div>
 
         <!--Buttons to reset game-->
-        <button type="button" disabled="true">Play Again!</button>
+        <button id="play-button">Play Again!</button>
 
         <script src="game.js"></script>
     </body>

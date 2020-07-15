@@ -12,6 +12,7 @@ body{
     center center/cover; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 100%;
     background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*game Instructions*/
@@ -83,6 +84,7 @@ span[id="player-score"]{
 }
 
 /*Computer Choices Icons*/
-#computer-rock, #computer-paper, #computer-scissors{
-    visibility: hidden;
+#computer-rock, #computer-paper, #computer-scissors,
+#computer-smile, #computer-frown{
+    display:none;
 }
