@@ -18,22 +18,6 @@
     flex-wrap: wrap;
 }
 
-/*Game display Layout*/
-.game-display{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width:inherit;
-    margin: inherit;
-}
-
-.round-result{
-    width: 400px;
-    height: 400px;
-    background-color: white;
-    border-radius: 20px;
-}
-
 /*Define size for choice icons*/
 i[class*="fa-hand"]{
     font-size: 5rem;

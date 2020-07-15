@@ -23,9 +23,8 @@ header{
 
 /*Game box*/
 .game{
-    margin:20px auto;
+    margin:50px auto;
     width:1000px;
-    border: 1px solid black;
 }
 
 /*Game display Layout*/
@@ -69,4 +68,21 @@ span[id="player-score"]{
     display: block;
     text-align: center;
     margin-top: 10px;
+}
+
+/*Round display for both the winner and reason*/
+.game-display .round-result{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.game-display .round-result p{
+    width:100%;
+    font-size: 2rem;
+}
+
+/*Computer Choices Icons*/
+#computer-rock, #computer-paper, #computer-scissors{
+    visibility: hidden;
 }

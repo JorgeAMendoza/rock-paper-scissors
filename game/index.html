@@ -26,19 +26,24 @@
             <div class="game-display">
                 <p>You <span id="player-score">0</span></p>
                 <div class="round-result">
-                    <p class="result"></p>
-                    <p class="how"></p>
+                    <p id="result"></p>
+                    <p id="how"></p>
                 </div>
                 <p>Computer <span id="computer-score">0</span></p>
             </div>
             <div class="computer-choice">
                 <div class="game-row">
-                    <div class="game-choice"><i class="fas fa-hand-rock"></i></div>
+                    <div class="game-choice">
+                        <i id="computer-rock" class="fas fa-hand-rock"></i>
+                        <i id="computer-paper" class="fas fa-hand-rock"></i>
+                        <i id="computer-scissors" class="fas fa-hand-rock"></i></div>
                 </div>
             </div>
         </div>
 
         <!--Buttons to reset game-->
         <button type="button" disabled="true">Play Again!</button>
+
+        <script src="game.js"></script>
     </body>
 </html>
