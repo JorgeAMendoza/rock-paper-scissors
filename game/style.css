@@ -1,0 +1,40 @@
+/*Basic Body Styling*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, rgba(2,0,36,1) 0%, rgba(154,154,171,1) 35%, rgba(0,212,255,1) 100%);
+    background-size: cover;
+}
+
+/*game Instructions*/
+header{
+    width:80%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+/*Game box*/
+.game{
+    margin:20px auto;
+    width:80%;
+}
+
+.game-display{
+    height:500px;
+}
+
+button{
+    display: block;
+    margin:0 auto;
+    color:black;
+    background-color: #62de70;
+    border:none;
+    padding:20px;
+    border-radius: 10px;
+    width:200px;
+    cursor: pointer;
+}

@@ -1,0 +1,16 @@
+
+
+.game-row{
+    display:flex;
+    flex: 1;
+    justify-content: space-evenly;
+    width:80%; 
+    border: 1px solid black;
+    margin:10px auto;
+}
+
+.game-choice{
+    height:200px;
+    background-color: white;
+    flex-basis: 200px;
+}

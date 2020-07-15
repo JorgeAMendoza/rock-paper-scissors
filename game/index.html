@@ -4,50 +4,41 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rock | Paper | Scissors</title>
-        <script>
-            //Function used to get computer's move.
-            function computerPlay(){
-                let options = ["rock", "paper", "scissors"];
-                return options[Math.floor(Math.random() * 3)];
-            }
-
-            //Play the rock,paper,scissors game
-            function playGame(playerSelection, computerSelection = computerPlay()){
-                if(playerSelection == computerSelection){
-                    return "Its a draw!";
-                }else if(playerSelection == "rock" && computerSelection == "scissors"){
-                    return "You win! Rock beats scissors";
-                }else if(playerSelection == "paper" && computerSelection == "rock"){
-                    return "You win! Paper beats rock";
-                }else if(playerSelection == "scissors" && computerSelection == "paper"){
-                    return "You Win! Scissors beats paper";
-                }else if (playerSelection == "scissors" && computerSelection == "rock"){
-                    return "You lose! Rock beats scissors";
-                }else if(playerSelection == "rock" && computerSelection == "paper"){
-                    return "You lose! Paper beats rock";
-                }else if(playerSelection == "paper" && computerSelection == "scissors"){
-                    return "You lose! Scissors beats paper!";
-                }
-                else{
-                    return "Invalid choice buddy!";
-                }
-            }
-
-            //Funciton to call when the script fully loads, plays the game 5 times. 
-            function game(){
-                let i = 0;
-                while (i < 5){
-                    let playerMove = window.prompt("Rock, paper, or scissors?").toLocaleLowerCase();
-                    alert(playGame(playerMove));
-                    i++;
-                }
-            }
-
-            //call the function "game"
-            game();
-        </script>
+        <script src="https://kit.fontawesome.com/ee7266906e.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="utilities.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        
+        <header>
+            <h1>Rock, Paper, Scissors</h1>
+            <p>Play Rock, Paper, Scissors VS the Computer!</p>
+            <p>Click an option below, the first one to 5 wins the the match!</p>
+        </header>
+
+        <div class="game">
+            <div class="player-choice">
+                <div class="game-row">
+                    <div class="game-choice"><i class="fas fa-hand-rock"></i></div>
+                    <div class="game-choice"><i class="fas fa-hand-paper"></i></div>
+                    <div class="game-choice"><i class="fas fa-hand-scissors"></i></div>
+                </div>
+            </div>
+            <div class="game-display">
+                <p>Your Score is <span id="player-score">0</span></p>
+                <div class="round-result">
+                    <p class="result"></p>
+                    <p class="how"></p>
+                </div>
+                <p>Your Score is <span id="computer-score">0</span></p>
+            </div>
+            <div class="computer-choice">
+                <div class="game-row">
+                    <div class="game-choice"><i class="fas fa-hand-rock fa-5x"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <!--Buttons to reset game-->
+        <button>Play Again!</button>
     </body>
 </html>
